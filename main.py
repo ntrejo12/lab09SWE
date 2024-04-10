@@ -1,4 +1,5 @@
 from encoder import *
+from decoder import *
 
 if __name__ == '__main__':
     check = True
@@ -14,7 +15,7 @@ if __name__ == '__main__':
             new_password = encoder(password)
             print("Your password has been encoded and stored!\n")
         elif option == 2:
-            new_password = encoder(password)
-            print(f"The encoded password is {new_password}, and the original password is {password}\n")
+            decoded_password = decoder(new_password)
+            print(f"The encoded password is {new_password}, and the original password is {decoded_password}\n")
         elif option == 3:
             check = False
